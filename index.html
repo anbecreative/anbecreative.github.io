@@ -3,14 +3,74 @@
 <head>
 <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
 <link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+	.tl-logo {
+  font-size: 50px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -0.5em;
+  margin-top: -0.5em;
+  width: 1em;
+  height: 1em;
+  background-color: #e63d3d;
+  border-radius: 100%;
+  cursor: pointer
+}
+.tl-logo:before, .tl-logo:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 0.78em;
+  height: 0.56em;
+  border: 0.22em solid #fff;
+  border-right: 1;
+  border-left: 0;
+  box-sizing: border-box;
+  top: 50%;
+  margin-top: -0.29em;
+  left: 50%;
+  margin-left: -0.25em;
+	border-radius: .05em;
+
+
+}
+	/*	----- */
+		
+
+		
+	</style>
 </head>
 <body>
-	<main>
-		
-		
-	<div class="eye shaped">Eye</div>	
+<header>
+  <h1 class="logo">anbe creative </h1>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <nav>
+	  <h1 hidden>Menu</h1>
+    <ul class="menu">
+      <li><a href="#">CSS</a></li>
+    </ul>
+  </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>
+
+<main>
+	<article>
+		<header><hgroup>
+		<h1>Original link:</h1>
+		<p>https://codepen.io/anon/pen/qdJzrd</p>
+		</hgroup></header>
 			
+	<section class="icon-overview">
+			<div class="tl-logo icon"></div>	
 		
-	</main>
+	</section>
+
+
+	</article>
+</main>
+	<footer>Copyright</footer>
 </body>
 </html> 
