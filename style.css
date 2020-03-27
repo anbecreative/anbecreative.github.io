@@ -1,7 +1,8 @@
 :root {
-	--cl_light: white;
-	--cl_mid: gray;
-	--cl_dark: black;
+	--cl_light: #FFFFFF;
+	--cl_mid: #C8C8C8;
+	--cl_dark: #1E1E24;
+	--cl_focus: #FFAF01;
 	--fw_light: 100;
 	--fw_reg: 400;
 	--fw_bold: 800;
@@ -42,9 +43,9 @@ body > header {
 	display: grid;
 	grid-area: header;
 	grid-template-areas: "logo nav";
-	grid-template-columns: 150px auto;
+	grid-template-columns: 250px auto;
 	grid-template-rows: 70px;
-	background: var(--cl_mid);
+	background: var(--cl_focus);
 	text-align: left;
 	padding-left: 1.8em;
 	padding-right: 1.8em;
@@ -56,11 +57,13 @@ body > header {
 
 .logo {
 	align-self: center;
-	font-weight: 400;
-	font-size: 1.5rem;
-	letter-spacing: -0.02rem;
-	color: var(--cl_light);
 	grid-area: logo;
+}
+
+.logo img {
+	display: flex;
+	width: 160px;
+		align-self: center;
 }
 
 /* changed this from the tutorial video to
@@ -115,28 +118,36 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--cl_light);
+  background: var(--cl_focus);
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+	display: flex;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+	display: flex;
+	flex-direction: column;
 }
 
 nav li {
-  margin-bottom: 1.25em;
-  margin-left: 1.8em;
+  margin-left: 11em;
+		align-self: center;
+	align-self: center;
+	display: flex;
+	height: 10vh;
+	width: 100%;
 }
 
 nav a {
-  color: var(--cl_light);
+  color: var(--cl_dark);
   text-decoration: none;
   font-size: 1.2rem;
+	align-self: center;
 	letter-spacing: -0.01rem;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
@@ -208,10 +219,11 @@ nav a:hover {
   
   nav ul {
     display: flex;
+	flex-direction: row;
   }
   
   nav li {
-    margin-left: 1em;
+    margin-left: 3em;
     margin-bottom: 0;
   }
   
@@ -239,7 +251,7 @@ body > main {
 	padding-right: 1.8em;
 	grid-area: main;
 	grid-template-columns: auto;
-	grid-template-rows: 70px auto;
+	grid-template-rows: 20px auto;
 	grid-template-areas: "crumb" "main";
 }
 
@@ -270,7 +282,7 @@ article, article h1 {
  
 
 article > header {
-	height: 150px;
+	height: 100px;
 }
 
 .icon-overview {
