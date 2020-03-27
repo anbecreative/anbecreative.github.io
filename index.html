@@ -32,18 +32,53 @@
   left: 50%;
   margin-left: -0.25em;
 	border-radius: .05em;
-
-
+		}
+.ic {
+	font-size: 80px;
+	color: transparent;
+	user-select: none;
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	overflow: visible;
+	vertical-align: top;
+	font-style: normal;
+	height: 1em;
+	width: 1em;
+	mix-blend-mode: multiply;
+	cursor: pointer;
 }
-	/*	----- */
-		
+	
+	.ic.ic-cloud2 {
+	background: radial-gradient(circle at 0.6875em 0.415625em, #000 0%, #000 17%, transparent 21%, transparent 100%), radial-gradient(circle at 0.415625em 0.415625em, #000 0%, #000 30%, transparent 33%, transparent 100%), radial-gradient(circle at 0.2em 0.625em, #000 0%, #000 17%, transparent 20%, transparent 100%), radial-gradient(circle at 0.8em 0.625em, #000 0%, #000 17%, transparent 20%, transparent 100%), linear-gradient(90deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%), linear-gradient(transparent 43.75%, #000 43.75%, #000 81.25%, transparent 81.25%);
+}
+	
+	.ic.ic-cloud2:before {
+  width: 0.125em;
+  height: 0.1875em;
+  background-color: white;
+  top: 0.5em;
+  left: 0.5375em;
+	}
+
+.ic.ic-cloud2:after {
+  top: 0.375em;
+  left: 0.3125em;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0 0.1875em 0.1875em 0.1875em;
+  background-color: transparent;
+  border-color: transparent transparent white transparent;
+	}
+
 
 		
 	</style>
 </head>
 <body>
 <header>
-  <h1 class="logo">anbe creative </h1>
+  <h1 class="logo"><a href="anbecreative.com" rel="home"><img src="/img/anbe-creative-logo-cl.png"></a></h1>
   <input type="checkbox" id="nav-toggle" class="nav-toggle">
   <nav>
 	  <h1 hidden>Menu</h1>
@@ -59,18 +94,18 @@
 <main>
 	<article>
 		<header><hgroup>
-		<h1>Original link:</h1>
-		<p>https://codepen.io/anon/pen/qdJzrd</p>
+		<h1>First trial with CSS icons</h1>
+		<p>Taken from https://codepen.io/anon/pen/qdJzrd.</p>
 		</hgroup></header>
 			
 	<section class="icon-overview">
 			<div class="tl-logo icon"></div>	
-		
+		<div class="ic ic-cloud2">cloud</div>
 	</section>
 
 
 	</article>
 </main>
-	<footer>Copyright</footer>
+	<footer>©</footer>
 </body>
 </html> 
