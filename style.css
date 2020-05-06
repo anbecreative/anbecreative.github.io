@@ -102,7 +102,7 @@ h4 {
 
 p, footer {
 	padding-bottom: 1rem;
-	font-family: garamond, sans-serif;
+	font-family: 'EB Garamond', serif;
 	font-weight: var(--fw_light);
 	line-height: 1.2;
 }
