@@ -1,0 +1,27 @@
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <title>your font</title>
+    <style type="text/css" media="screen">
+        @font-face { font-family: 'Squaripeg-Rounded'; src: url('Squaripeg-Rounded.woff'); }
+
+        body { 
+            font-family: "Squaripeg-Rounded"; 
+            font-feature-settings: "kern" on, "liga" on;
+            -moz-font-feature-settings: "kern" on, "liga" on;
+            -webkit-font-feature-settings: "kern" on, "liga" on;
+            -ms-font-feature-settings: "kern" on, "liga" on;
+            -o-font-feature-settings: "kern" on, "liga" on;
+        }
+        p { padding: 5px; margin: 10px; }
+        p#smallParagraph { font-size: 12pt; }
+        p#largeParagraph { font-size: 32pt; }
+        p#veryLargeParagraph { font-size: 300pt; }      
+    </style>
+</head>
+<body>
+    <p id="smallParagraph">abcdefghijklmnopqrstuvwxyz</p>
+    <p id="largeParagraph">abcdefghijklmnopqrstuvwxyz</p>
+    <p id="veryLargeParagraph">SquariPeg
+	<br/>Rounded</p>
+</body>
