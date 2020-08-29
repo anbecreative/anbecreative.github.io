@@ -192,12 +192,13 @@ ul {
 }
 
 .strip a {
-  color: lightgray;
+  color: silver;
 }
 
 .strip a:hover {
 	color: black;
 }
+
 
 .arrows {
 	display: flex;
@@ -206,7 +207,20 @@ ul {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+	color: darkred;
+	      animation: animate  
+                1.5s linear infinite; 
 }
+
+@keyframes animate { 
+	0% { 
+		color: silver; 
+	} 
+
+	100% { 
+		color: black; 
+	} }
+
 
 .left {
   transform: rotate(135deg);
@@ -248,5 +262,5 @@ ul {
 
 .folio h3 {
 	font-weight: 300;
-	color: lightgray;
+	color: darkred;
 }
