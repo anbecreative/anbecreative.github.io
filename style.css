@@ -1,11 +1,24 @@
 @font-face {
-    font-family: 'afons_infantbook';
-    src: url('afonsinfant-book-webfont.woff2') format('woff2'),
-         url('afonsinfant-book-webfont.woff') format('woff');
+    font-family: 'afons-book';
+    src: url('afons-book.woff2') format('woff2'),
+         url('afons-book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
+p {
+	font-variant-ligatures: common-ligatures;
+}
+
+p {
+	-webkit-font-variant-ligatures: common-ligatures;
+	/* for iOS and Safari 6 */
+font-variant-ligatures: common-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
+}
+
+
+
 
 :root {
 	--cl_light: #FFFFFF;
@@ -34,6 +47,7 @@ body {
 	font-size: 1rem;
 	line-height: 1.2;
     letter-spacing: .0002rem;
+	text-rendering: optimizeLegibility;
 }
 
 main {
@@ -66,7 +80,7 @@ h1 a {
 	font-size: 1rem;
 	font-weight: 600;
 	line-height: 1.4;
-    	font-family: 'afons_infantbook', serif;
+    	font-family: 'afons-book', serif;
     letter-spacing: -0.05rem;
 }
 
@@ -101,7 +115,7 @@ h4 {
 .introduction {
 	padding: 2rem 0;
 	font-size: 1rem;
-	font-family: 'afons_infantbook', serif;
+	font-family: 'afons-book', serif;
 	line-height: 1.2;
 	color: darkred;
         letter-spacing: -.02rem;
@@ -119,7 +133,7 @@ h4 {
 
 p, footer {
 	padding-bottom: 1rem;
-	font-family: 'afons_infantbook', serif;
+	font-family: 'afons-book', serif;
 	font-weight: var(--fw_light);
 	line-height: 1.4;
 }
@@ -254,7 +268,7 @@ ul {
 	color: black;
 	padding: 0 1rem;
 	font-weight: 100;
-    	font-family: 'afons_infantbook', serif;
+    	font-family: 'afons-book', serif;
 }
 
 .homebutton {
