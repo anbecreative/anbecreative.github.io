@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'afons_infantbook';
+    src: url('afonsinfant-book-webfont.woff2') format('woff2'),
+         url('afonsinfant-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 :root {
 	--cl_light: #FFFFFF;
 	--cl_mid: #C8C8C8;
@@ -21,9 +30,10 @@ body {
 	margin: 0;
 	background: var(--cl_light);
 	font-family: 'Inter', sans-serif;
-	font-size: 16pt;
-	font-size: 1.2rem;
-	line-height: 1.4;
+	font-size: 14pt;
+	font-size: 1rem;
+	line-height: 1.5;
+    letter-spacing: .0002rem;
 }
 
 main {
@@ -44,7 +54,7 @@ a:hover {
 }
 
 h1 {
-	font-size: 1.7rem;
+	font-size: 1rem;
 	font-weight: 200;
 }
 
@@ -53,7 +63,7 @@ h1 a {
 }
 
 .title h1 {
-	font-size: 1.4rem;
+	font-size: 1rem;
 	font-weight: 600;
 	line-height: 1.4;
 }
@@ -88,10 +98,12 @@ h4 {
 
 .introduction {
 	padding: 2rem 0;
-	font-size: 1.7rem;
-	font-family: 'Afonsinfant-Book', serif;
+	font-size: 1rem;
+	font-family: 'afons_infantbook', serif;
 	line-height: 1.2;
 	color: black;
+        letter-spacing: -.02rem;
+
 }
 
 .introduction a {
@@ -104,9 +116,9 @@ h4 {
 
 p, footer {
 	padding-bottom: 1rem;
-	font-family: 'EB Garamond', serif;
+	font-family: 'afons_infantbook', serif;
 	font-weight: var(--fw_light);
-	line-height: 1.2;
+	line-height: 1.4;
 }
 
 .container {
@@ -145,8 +157,8 @@ p, footer {
 }
 	
 	.introduction {
-	font-size: 2.5rem;
-	line-height: 1.2;
+	font-size: 1.8rem;
+	line-height: 1.4;
 }
 }
 
