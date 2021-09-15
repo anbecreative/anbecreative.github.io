@@ -32,7 +32,7 @@ body {
 	font-family: 'Inter', sans-serif;
 	font-size: 14pt;
 	font-size: 1rem;
-	line-height: 1.5;
+	line-height: 1.2;
     letter-spacing: .0002rem;
 }
 
@@ -66,6 +66,8 @@ h1 a {
 	font-size: 1rem;
 	font-weight: 600;
 	line-height: 1.4;
+    	font-family: 'afons_infantbook', serif;
+    letter-spacing: -0.05rem;
 }
 
 h2 {
@@ -101,10 +103,11 @@ h4 {
 	font-size: 1rem;
 	font-family: 'afons_infantbook', serif;
 	line-height: 1.2;
-	color: black;
+	color: darkred;
         letter-spacing: -.02rem;
 
 }
+
 
 .introduction a {
 	color: darkred;
@@ -251,6 +254,7 @@ ul {
 	color: black;
 	padding: 0 1rem;
 	font-weight: 100;
+    	font-family: 'afons_infantbook', serif;
 }
 
 .homebutton {
