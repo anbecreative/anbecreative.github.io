@@ -64,7 +64,19 @@ a:hover {
 	color: black;
 }
 
+.title h1 {
+    	font-size: 1.4rem;
+}
+
+.title h2 {
+    color: lightgray;
+    font-size: 1rem;
+}
+
 h1 {
+    	font-size: 1rem;
+    line-height: 1.8rem;
+    color: darkred;
 
 }
 
@@ -72,26 +84,28 @@ h1 a {
 	color: black;
 }
 
-.title h1 {
-    	font-size: 1.6rem;
-}
+
 
 h2 {
+    font-size: 1.3rem;
+    padding-bottom: 0.4rem;
+
 
 }
 
-.title h2 {
-	color: lightgray;
-}
 
 h3 {
-    color:lightgray;
-        margin-top: 0.4rem;
+    color:darkgray;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding-bottom: 0.25rem;
 }
 
 h4 {
 	padding-bottom: .5rem;
     font-size: 1.2rem;
+        color:lightgray;
+
 }
 
 .title {
@@ -99,7 +113,10 @@ h4 {
 }
 
 .introduction {
-	padding: 2rem 0;
+    font-size: 1.38rem;
+	padding: 1rem 0;
+    color: black;
+    line-height: 1.9rem;
 }
 
 
@@ -136,17 +153,13 @@ p, footer {
 @media screen and (min-width: 30em) {
 	
 	.title h1 {
-	line-height: 1.8;
 }
 	
 	.title h2 {
 	margin-bottom: 1rem;
-	color: grey;
 }
 	
 	.introduction {
-	font-size: 1.8rem;
-	line-height: 1.3;
 }
 }
 
