@@ -64,6 +64,10 @@ a:hover {
 	color: black;
 }
 
+.title {
+	padding-top: .7rem;
+}
+
 .title h1 {
     	font-size: 1.4rem;
 }
@@ -108,9 +112,7 @@ h4 {
 
 }
 
-.title {
-	padding-top: .7rem;
-}
+
 
 .introduction {
     font-size: 1.38rem;
